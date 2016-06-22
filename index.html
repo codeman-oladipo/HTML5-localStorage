@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Storage HTML5</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron text-center">
+    <h3>HTML5 LocalStorage </h3>
+  </div>
+<div class="col-md-6">
+<form class="form-inline">
+    <input type="text" class="form-control" id="taskName" size="65" placeholder="Task">
+    <div><button type="button" class="btn btn-primary">ADD TASK</button></div>
+</form>
+  <div id="msgBox" class="list-group-item" ></div>
+  </div>
+  <div class="col-md-6">
+  <button type="button" class="btn btn-danger " id="cleanBtn" >CLEAR</button>
+  <div id="task_list" class="list-group"></div>
+  </div>
+  </div>
+</body>
+<style type="text/css">
+  #msgBox {
+    margin-top: 20px;
+    border : none;
+   }
+    ul {
+        padding: 10px 0 0 0;
+    }
+    #taskName {
+        margin-bottom: 10px;
+    }
+</style>
+<script type="text/javascript" src="js/save.js"></script>
+</html>
