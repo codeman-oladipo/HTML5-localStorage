@@ -1,6 +1,6 @@
 (function(){
 
-var saveObj = {} // new global object
+var saveObj = {} // new global object for creating namespace
 var mylist = {};
 var arr;
 var listItem = [];
