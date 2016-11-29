@@ -1,6 +1,7 @@
 (function(){
-    
-var mylist = {}
+
+var saveObj = {} // new global object
+var mylist = {};
 var arr;
 var listItem = [];
 
@@ -8,10 +9,10 @@ mylist.methods = {
 
 checkData : function() {
     if (this.showTask() !== null ){
-		arr = this.showTask() 
+		arr = this.showTask()
            } else {
             arr = []
-           }	
+           }
 	  return arr
 	},
 
@@ -48,7 +49,7 @@ stackItem : function() {
         }
       $('#task_list').html(newlistItem);
 	},
-    
+
 save : function() {
     document.querySelector('.btn-primary').addEventListener('click', function(){
 	   mylist.methods.saveTask(document.querySelector('#taskName').value);
@@ -57,14 +58,14 @@ save : function() {
          }
       })
     },
-    
+
 clearAll : function() {
     document.querySelector('#cleanBtn').addEventListener('click', function(){
         mylist.methods.removeTask();
         $('#task_list li').remove();
   })
 },
-    
+
 savekey : function() {
         document.getElementById('taskName').addEventListener('keypress', function(e){
     if (e.which == 13) {
@@ -78,6 +79,5 @@ mylist.methods.stackItem();
 mylist.methods.save();
 mylist.methods.clearAll();
 mylist.methods.savekey();
-      
-})()
 
+})()
